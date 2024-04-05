@@ -1,0 +1,85 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px; /* Add some padding to the body */
+}
+
+/* Style for headings */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+/* Style for tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff; /* Table background color */
+    border-radius: 5px; /* Add some border radius to table */
+    overflow: hidden; /* Hide overflow from table */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+/* Style for table headers */
+table th {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Style for table data cells */
+table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style for alternating rows */
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover effect on table rows */
+table tr:hover {
+    background-color: #ddd;
+}
+
+/* Style for links within table */
+table a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+/* Style for button */
+.add-button {
+    display: inline-block; /* Blok elementi olarak görüntüleme */
+    padding: 8px 20px; /* Daha küçük bir buton */
+    background-color: #00CC00;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 0 auto; /* Yatayda ortalamak için margin */
+}
+.delete-btn {
+color: #FF0000;
+}
+
+.add-button:hover {
+    background-color: #0056b3;
+}

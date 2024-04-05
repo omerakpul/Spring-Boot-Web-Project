@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http:www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Project 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>User List</h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>ADDRESS</th>
+        <th>ACTION</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="p:${plist}">
+        <td th:text="${p.id}"></td>
+        <td th:text="${p.name}"></td>
+        <td th:text="${p.address}"></td>
+        <td>
+            <a th:href="@{/updatePerson/{id}(id=${p.id})}" class="update-btn">Update</a>
+            <a th:href="@{/deletePerson/{id}(id=${p.id})}" class="delete-btn">Delete</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<a th:href="@{/addPerson}" class="add-button">Add Person</a>
+</body>
+</html>
